@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <p>Menu Principal</p>
 
-</head>
-<body>
+    <div><a href="consultar.html"> Consultar</a></div>
 
-  <p>Menu Principal</p>
+    <div><a href="cadastrar.html"> Cadastrar</a></div>
 
-  <div> <a href="consultar.html"> Consultar</a> </div>
+    <div><a href="editar.html"> Editar</a></div>
 
-  <div> <a href="cadastrar.html"> Cadastrar</a> </div>
+    <div><a href="excluir.html"> Excluir</a></div>
 
-  <div> <a href="editar.html"> Editar</a> </div>
+    <div><a href="consultar2.html"> Consultar2</a></div>
 
-  <div> <a href="excluir.html"> Excluir</a> </div>
+    <p id="p_texto">0</p>
 
-  <div> <a href="consultar2.html"> Consultar2</a> </div>
+    <input id="ano" type="number" placeholder="ano" />
+    <input id="pais" type="text" placeholder="pais" />
 
+    <button id="btn_texto" type="submit" onclick="trazer()">Fetch</button>
 
-  <p id="p_texto">0</p>
-  
-  <input id="ano" type="number" placeholder="ano">
-  <input id="pais" type="text" placeholder="pais">
+    <ul id="repos"></ul>
 
-  <button id="btn_texto" type="submit" onclick="trazer()">Fetch</button>
-
-  <ul id="repos"></ul>
-
-  
-</body>
+    <p>Teste Empório</p>
+  </body>
 </html>
