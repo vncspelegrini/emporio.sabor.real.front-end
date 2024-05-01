@@ -18,6 +18,7 @@
 
   <h1>Atualizar Estoque</h1>
 
+  <!-- 
   <form id="form_atualizar">
     <label for="produto">Produto:</label>
     <input type="text" id="produto" name="produto" required>
@@ -57,6 +58,26 @@
 
     <input type="submit" value="Atualizar Estoque">
   </form>
+-->
+
+<div id="mensagem4"></div>
+<input type="text" id="id_do_produto_editar" placeholder="ID do produto" />
+<button onclick="consultarParaEditar()">Consultar</button>
+<div id="form-edicao" style="display: none;">
+  <input type="text" id="produto_editar" placeholder="Produto" /><br>
+  <input type="number" id="quantidade_editar" placeholder="Quantidade" /><br>
+  <input type="text" id="validade_editar" placeholder="Validade" /><br>
+  <input type="text" id="categoria_editar" placeholder="Categoria" /><br>
+  <input type="date" id="dataCompra_editar" placeholder="Data de Compra" /><br>
+  <input type="number" id="precoCompra_editar" placeholder="Preço de Compra" /><br>
+  <input type="number" id="precoVenda_editar" placeholder="Preço de Venda" /><br>
+  <input type="text" id="fornecedor_editar" placeholder="Fornecedor" /><br>
+  <input type="text" id="descricao_editar" placeholder="Descrição" /><br>
+  <input type="checkbox" id="produtoDisponivel_editar" /><label for="produtoDisponivel_editar">Produto Disponível</label><br>
+  <button onclick="editar()">Editar</button>
+</div>
+
+
 
 
 </body>
