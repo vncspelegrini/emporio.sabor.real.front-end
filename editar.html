@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
 
-</head>
-<body>
+      <h1>Empório Sabor Real</h1>
+    </header>
 
-  <header>
-
-    <div> <a href="index.html">Voltar para o Menu Principal </a>  </div>
-
-  </header>
-
-  <h1>Atualizar Estoque</h1>
-
-  <!-- 
+    <main>
+      <div class="container">
+        <div class="content">
+          <h3>Atualizar Produto</h3>
+          <br />
+          <!-- 
   <form id="form_atualizar">
     <label for="produto">Produto:</label>
     <input type="text" id="produto" name="produto" required>
@@ -60,25 +68,92 @@
   </form>
 -->
 
-<div id="mensagem4"></div>
-<input type="text" id="id_do_produto_editar" placeholder="ID do produto" />
-<button onclick="consultarParaEditar()">Consultar</button>
-<div id="form-edicao" style="display: none;">
-  <input type="text" id="produto_editar" placeholder="Produto" /><br>
-  <input type="number" id="quantidade_editar" placeholder="Quantidade" /><br>
-  <input type="text" id="validade_editar" placeholder="Validade" /><br>
-  <input type="text" id="categoria_editar" placeholder="Categoria" /><br>
-  <input type="date" id="dataCompra_editar" placeholder="Data de Compra" /><br>
-  <input type="number" id="precoCompra_editar" placeholder="Preço de Compra" /><br>
-  <input type="number" id="precoVenda_editar" placeholder="Preço de Venda" /><br>
-  <input type="text" id="fornecedor_editar" placeholder="Fornecedor" /><br>
-  <input type="text" id="descricao_editar" placeholder="Descrição" /><br>
-  <input type="checkbox" id="produtoDisponivel_editar" /><label for="produtoDisponivel_editar">Produto Disponível</label><br>
-  <button onclick="editar()">Editar</button>
-</div>
+          <input
+            type="text"
+            id="id_do_produto_editar"
+            placeholder="ID do produto"
+          />
+          <br>
+          <br> 
+
+          <div class="botao">
+          <button onclick="consultarParaEditar()">Consultar</button>
+        </div>
+
+          <br>
+          <br>
+
+          <div id="form-edicao" style="display: none">
+            <input
+              type="text"
+              id="produto_editar"
+              placeholder="Produto"
+            /><br />
+            <input
+              type="number"
+              id="quantidade_editar"
+              placeholder="Quantidade"
+            /><br />
+            <input
+              type="text"
+              id="validade_editar"
+              placeholder="Validade"
+            /><br />
+            <input
+              type="text"
+              id="categoria_editar"
+              placeholder="Categoria"
+            /><br />
+            <input
+              type="date"
+              id="dataCompra_editar"
+              placeholder="Data de Compra"
+            /><br />
+            <input
+              type="number"
+              id="precoCompra_editar"
+              placeholder="Preço de Compra"
+            /><br />
+            <input
+              type="number"
+              id="precoVenda_editar"
+              placeholder="Preço de Venda"
+            /><br />
+            <input
+              type="text"
+              id="fornecedor_editar"
+              placeholder="Fornecedor"
+            /><br />
+            <input
+              type="text"
+              id="descricao_editar"
+              placeholder="Descrição"
+            /><br />
+            <input type="checkbox" id="produtoDisponivel_editar" /><label
+              for="produtoDisponivel_editar"
+              >Produto Disponível</label
+            ><br />
+            <br>
+            
+            <div class="botao">
+            <button onclick="editar()">Editar</button>
+          </div>
+          </div>
+
+          <br>
+          <br>
+          <div id="mensagem4"></div>
 
 
+          <div class="voltar">
+            <a href="index.html">Voltar para o Menu Principal</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
-
-</body>
+    <footer>
+      <p>Projeto Integrador em Computação I - Turma 001</p>
+    </footer>
+  </body>
 </html>

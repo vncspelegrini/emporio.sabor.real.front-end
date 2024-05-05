@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/consultarTodos.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
 
-</head>
-<body>
+      <h1>Empório Sabor Real</h1>
+    </header>
 
-  <header>
+    <main>
+      <div class="container">
+      <div class="content">
+        <h3>Menu Consultar Todos</h3>
 
-    <div> <a href="index.html">Voltar para o Menu Principal</a></div>
+        <div class="botao">
+          <button id="btn_consultar2" type="submit" onclick="consultar2()">
+            Consultar Todos os Produtos
+          </button>
+        </div>
 
-  </header>
+        <ul id="repos2"></ul>
 
-  <p>Menu Consultar</p>
+        <div id="dados-produtos2">
+          <!-- Os dados dos produtos serão inseridos aqui -->
+        </div>
 
-  <button id="btn_consultar2" type="submit" onclick="consultar2()">Consultar Todos os Produtos</button>
+        <div class="voltar"><a href="index.html">Voltar para o Menu Principal</a></div>
+      </div>
+    </div>
+    </main>
 
-  <ul id="repos2"></ul>
-
-  <div id="dados-produtos2">
-    <!-- Os dados dos produtos serão inseridos aqui -->
-  </div>
-
-
-</body>
+    <footer>
+      <p>Projeto Integrador em Computação I - Turma 001</p>
+    </footer>
+  </body>
 </html>

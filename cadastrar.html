@@ -6,45 +6,79 @@
   <title>Document</title>
 
   <script src="script.js"></script>
+  <link rel="stylesheet" href="css/padrao.css" />
+  <link rel="stylesheet" href="css/" />
 
 </head>
 <body>
 
   <header>
+    <img
+      src="Images/logo-emporio 2018.png"
+      height="120"
+      width="120"
+      alt="logo da empresa"
+    />
 
-    <div> <a href="index.html">Voltar para o Menu Principal</a></div>
-
+    <h1>Empório Sabor Real</h1>
   </header>
 
-  <p>Menu Cadastrar</p>
- 
+  <main>
+
+    <div class="container">
+      <div class="content">
+
+  <h3>Menu Cadastrar</h3>
+
+  <br>
+  <br>
+
+  <label for>Produto: </label>
   <input id="produto" type="text" placeholder="produto">
   <br>
-  <label for>Produto Disponível (true or false)</label>
+  <label for>Produto Disponível (true or false): </label>
   <input id="produto_disponivel" type="text" placeholder="produto_disponivel">
   <br>
+  <label for>Quantidade: </label>
   <input id="quantidade" type="number" placeholder="quantidade">
   <br>
+  <label for>Data de Validade: </label>
   <input id="validade" type="date" placeholder="validade">
   <br>
+  <label for>Categoria: </label>
   <input id="categoria" type="text" placeholder="categoria">
   <br>
+  <label for>Data de Compra: </label>
   <input id="data_compra" type="date" placeholder="data_compra">
   <br>
+  <label for>Preço de Compra: </label>
   <input id="preco_compra" type="text" placeholder="preco_compra">
   <br>
+  <label for>Preço de Venda: </label>
   <input id="preco_venda" type="text" placeholder="preco_venda">
   <br>
+  <label for>Fornecedor: </label>
   <input id="fornecedor" type="text" placeholder="fornecedor">
   <br>
+  <label for>Descrição: </label>
   <input id="descricao" type="text" placeholder="descricao">
   <br>
   <br>
 
+  <div class="botao">
   <button id="btn_cadastrar" type="submit" onclick="cadastrar()">Cadastrar</button>
+</div>
 
   <div id="mensagem"></div>
 
-   
+  <div class="voltar"><a href="index.html">Voltar para o Menu Principal</a></div>
+
+</div>
+</div>
+</main>
+
+<footer>
+  <p>Projeto Integrador em Computação I - Turma 001</p>
+</footer>
 </body>
 </html>

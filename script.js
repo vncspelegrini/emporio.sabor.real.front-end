@@ -468,7 +468,7 @@ function consultarParaEditar() {
 function editar() {
   let id = document.getElementById('id_do_produto_editar').value;
 
-  const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
 
   const data = {
     produto: document.getElementById('produto_editar').value,
@@ -484,7 +484,7 @@ function editar() {
   };
 
   fetch(endpoint, {
-    method: 'PUT',
+    method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
     },

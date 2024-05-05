@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
 
-</head>
-<body>
+      <h1>Empório Sabor Real</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
 
-  <header>
 
-    <div> <a href="index.html">Voltar para o Menu Principal</a></div>
+      <h3>Menu Consultar por Nome</h3>
 
-  </header>
+      <br>
 
-  <p>Menu Consultar</p>
+      <input
+        id="id_do_produto_consultar3"
+        type="text"
+        placeholder="nome do produto para consultar"
+      />
+      <br />
+      <br />
 
-  <input id="id_do_produto_consultar3" type="text" placeholder="nome do produto para consultar">
-  <br>
-  <br>
+      <div class="botao">
+      <button id="btn_consultar3" type="submit" onclick="consultar3()">
+        Consultar por Nome
+      </button>
+    </div>
 
-  <button id="btn_consultar3" type="submit" onclick="consultar3()">Consultar por Nome</button>
+      <ul id="reposConsultar"></ul>
 
-  <ul id="reposConsultar"></ul>
+      <div id="dados-produto3"></div>
 
-  <div id="dados-produto3">
+      <div id="mensagem3"></div>
 
+      <div id="tabela-container3"></div>
+
+      <div class="voltar"><a href="index.html">Voltar para o Menu Principal</a></div>
+
+    </div>
   </div>
-
-  <div id="mensagem3"></div>
-
-  <div id="tabela-container3"></div>
-
-</body>
+    </main>
+  </body>
 </html>

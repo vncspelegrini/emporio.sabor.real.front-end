@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
 
-</head>
-<body>
+      <h1>Empório Sabor Real</h1>
+    </header>
 
-  <header>
+    <main>
+      <div class="container">
+        <div class="content">
 
-    <div> <a href="index.html">Voltar para o Menu Principal</a></div>
+        <h3>Menu Consultar por ID</h3>
+        <br>
 
-  </header>
+        <input
+          id="id_do_produto_consultar"
+          type="number"
+          placeholder="id do produto consultar"
+        />
+        <br>
+        <br />
+        <div class="botao">
+        <button id="btn_consultar" type="submit" onclick="consultar()">
+          Consultar por ID
+        </button>
+        </div>
 
-  <p>Menu Consultar</p>
+        <ul id="reposConsultar"></ul>
 
-  <input id="id_do_produto_consultar" type="number" placeholder="id do produto consultar">
-  <br>
-  <br>
+        <div id="dados-produto"></div>
 
-  <button id="btn_consultar" type="submit" onclick="consultar()">Consultar por ID</button>
+        <div id="tabela-container"></div>
 
-  <ul id="reposConsultar"></ul>
+        <div id="mensagem"></div>
 
-  <div id="dados-produto">
+        <div class="voltar"><a href="index.html">Voltar para o Menu Principal</a></div>
 
+      </div>
+    </div>
   </div>
+    </main>
 
-  <div id="tabela-container"></div>
-
-  <div id="mensagem"></div>
-
-</body>
+    <footer>
+      <p>Projeto Integrador em Computação I - Turma 001</p>
+    </footer>
+  </body>
 </html>
