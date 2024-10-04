@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
+
+      <h1>Empório Sabor Real</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <h3>Menu Excluir por ID</h3>
+
+          <br />
+          <input
+            id="id_do_produto_excluir"
+            type="number"
+            placeholder="id do produto excluir"
+          />
+          <br />
+          <br />
+
+          <div class="botao">
+            <button class= "btn_cons bt1" id="btn_excluir" type="submit" onclick="excluir()">
+              Excluir
+            </button>
+          </div>
+
+          <div id="mensagem"></div>
+
+          <br />
+          <div class="voltar">
+            <button  class= "btn_cons bt2" >
+              <a href="index.html">Voltar para o Menu Principal</a>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Projeto Integrador em Computação I - Turma 001</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  margin: 0 auto; /* Isso centraliza o contêiner horizontalmente */
+  max-width: 800px; /* Define a largura máxima do contêiner */
+  padding: 20px; /* Adiciona um espaçamento interno ao contêiner */
+}
+
+
+body > header {
+  background-color: #edeaef;
+  color: white;
+  font-size: 24px;
+  padding: px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+body > header img {
+  color: white;
+  margin: 10px;
+  font-size: 2px;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center; 
+}
+
+body > header h1 {
+  color: rgb(211, 50, 50);
+  margin: 50px;
+  font-size: 20px;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+body > main .content {
+  text-align: center;
+  
+}
+
+body > main .botao {
+  font-size: 18px;
+  margin: 0px 0 20px 0;
+  padding: 5px 0;
+
+  background-color: transparent;
+  
+}
+
+body > main .botao:hover {
+  background: #ebe6e3;
+
+}
+
+
+body main .voltar{
+  margin: 20px;
+  
+}
+
+body main .voltar a{
+  color: rgb(230, 12, 12);
+  
+}
+
+
+body > footer {
+  background-color: #fbfafb;
+ color: black;
+ margin: 20px ;
+ font-size: 14px;
+ padding: 2px 0;
+ display: flex;
+ justify-content: center;
+ 
+}
+

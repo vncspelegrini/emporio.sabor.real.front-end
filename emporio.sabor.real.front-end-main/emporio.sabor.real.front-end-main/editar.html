@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
+
+      <h1>Empório Sabor Real</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <h3>Atualizar Produto</h3>
+          <br />
+          <!-- 
+  <form id="form_atualizar">
+    <label for="produto">Produto:</label>
+    <input type="text" id="produto" name="produto" required>
+    <br>
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" required>
+    <br>
+
+    <label for="validade">Validade:</label>
+    <input type="date" id="validade" name="validade" required>
+    <br>
+
+    <label for="categoria">Categoria:</label>
+    <input type="text" id="categoria" name="categoria" required>
+    <br>
+
+    <label for="data_compra">Data de Compra:</label>
+    <input type="date" id="data_compra" name="data_compra" required>
+    <br>
+
+    <label for="preco_compra">Preço de Compra:</label>
+    <input type="text" id="preco_compra" name="preco_compra" required>
+    <br>
+
+    <label for="preco_venda">Preço de Venda:</label>
+    <input type="text" id="preco_venda" name="preco_venda" required>
+    <br>
+
+    <label for="fornecedor">Fornecedor:</label>
+    <input type="text" id="fornecedor" name="fornecedor" required>
+    <br>
+
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" name="descricao">
+    <br>
+
+    <input type="submit" value="Atualizar Estoque">
+  </form>
+-->
+
+          <input
+            type="text"
+            id="id_do_produto_editar"
+            placeholder="ID do produto"
+          />
+          <br>
+          <br> 
+
+          <div class="botao">
+            <button  class= "btn_cons bt1" onclick="consultarParaEditar()">
+              Consultar
+            </button>
+          </div>
+
+          <br>
+          <br>
+
+          <div id="form-edicao" style="display: none">
+            <input
+              type="text"
+              id="produto_editar"
+              placeholder="Produto"
+            /><br />
+            <input
+              type="number"
+              id="quantidade_editar"
+              placeholder="Quantidade"
+            /><br />
+            <input
+              type="text"
+              id="validade_editar"
+              placeholder="Validade"
+            /><br />
+            <input
+              type="text"
+              id="categoria_editar"
+              placeholder="Categoria"
+            /><br />
+            <input
+              type="date"
+              id="dataCompra_editar"
+              placeholder="Data de Compra"
+            /><br />
+            <input
+              type="number"
+              id="precoCompra_editar"
+              placeholder="Preço de Compra"
+            /><br />
+            <input
+              type="number"
+              id="precoVenda_editar"
+              placeholder="Preço de Venda"
+            /><br />
+            <input
+              type="text"
+              id="fornecedor_editar"
+              placeholder="Fornecedor"
+            /><br />
+            <input
+              type="text"
+              id="descricao_editar"
+              placeholder="Descrição"
+            /><br />
+            <input type="checkbox" id="produtoDisponivel_editar" /><label
+              for="produtoDisponivel_editar"
+              >Produto Disponível</label
+            ><br />
+            <br>
+            
+            <div class="botao">
+            <button onclick="editar()">Editar</button>
+          </div>
+          </div>
+
+          <br>
+          <br>
+          <div id="mensagem4"></div>
+
+          <br />
+          <div class="voltar">
+            <button  class= "btn_cons bt2" >
+              <a href="index.html">Voltar para o Menu Principal</a>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Projeto Integrador em Computação I - Turma 001</p>
+    </footer>
+  </body>
+</html>
